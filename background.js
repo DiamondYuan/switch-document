@@ -1,16 +1,8 @@
 'use strict';
 
 var map;
-var xhr = new XMLHttpRequest();
-xhr.onload = function() {
-    var json = xhr.responseText;
-    json = json.replace(/^[^(]*\(([\S\s]+)\);?$/, '$1'); 
-    map = JSON.parse(json);
-    console.log(json)
-};
-xhr.open('GET', 'https://raw.githubusercontent.com/DiamondYuan/switch-document/master/data.json');
-xhr.send();
 
+loadMap()
 chrome.browserAction.onClicked.addListener(iconClick);
 chrome.tabs.onActivated.addListener(tabActivated);
 chrome.tabs.onUpdated.addListener(tabActivated);
@@ -40,6 +32,7 @@ function goTo(url) {
       return
     }
   }
+  loadMap()
 }
 
 function chaneIcon(url) {
@@ -66,4 +59,15 @@ function getCurrentTabUrl(callback) {
   chrome.tabs.query(queryInfo, function (tabs) {
     callback(tabs[0].url);
   });
+}
+
+
+function loadMap() { 
+  var xhr = new XMLHttpRequest();
+  xhr.onload = function() {
+      console.log("refresh data %s",xhr.responseText)
+      map = JSON.parse(xhr.responseText);
+  };
+  xhr.open('GET', 'https://raw.githubusercontent.com/DiamondYuan/switch-document/master/data.json');
+  xhr.send();
 }
