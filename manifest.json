@@ -1,0 +1,20 @@
+{
+  "name": "switch-document",
+  "description": "Click to switch document",
+  "version": "0.2",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "author": "DiamondYuan",
+  "icons": {
+    "128": "default.png"
+  },
+  "homepage_url": "https://github.com/DiamondYuan/switch-document",
+  "permissions": [
+    "tabs"
+  ],
+  "manifest_version": 2
+}
