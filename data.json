@@ -1,0 +1,9 @@
+{
+  "https://kubernetes.io/": "https://k8smeetup.github.io",
+  "http://reactivex.io/rxjs":"http://cn.rx.js.org",
+  "https://reactjs.org/":"https://doc.react-china.org/",
+  "https://webpack.js.org/":"https://doc.webpack-china.org/",
+  "highcharts.com/":"hcharts.cn/",
+  "http://guides.rubyonrails.org/":"https://ruby-china.github.io/rails-guides/",
+  "developer.chrome.com":"crxdoc-zh.appspot.com"
+}

@@ -1,7 +1,7 @@
 {
   "name": "switch-document",
   "description": "Click to switch document",
-  "version": "0.2",
+  "version": "0.4",
   "background": {
     "scripts": [
       "background.js"
@@ -14,7 +14,11 @@
   },
   "homepage_url": "https://github.com/DiamondYuan/switch-document",
   "permissions": [
-    "tabs"
+    "tabs",
+    "https://raw.githubusercontent.com/DiamondYuan/switch-document/master/data.json"
   ],
-  "manifest_version": 2
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Click to switch document"
+  }
 }

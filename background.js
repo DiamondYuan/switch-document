@@ -1,21 +1,19 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 'use strict';
 
-var map = {
-  "https://kubernetes.io/": "https://k8smeetup.github.io",
-  "http://reactivex.io/rxjs":"http://cn.rx.js.org",
-  "https://reactjs.org/":"https://doc.react-china.org/",
-  "https://webpack.js.org/":"https://doc.webpack-china.org/",
-  "highcharts.com/":"hcharts.cn/"
-}
+var map;
+var xhr = new XMLHttpRequest();
+xhr.onload = function() {
+    var json = xhr.responseText;
+    json = json.replace(/^[^(]*\(([\S\s]+)\);?$/, '$1'); 
+    map = JSON.parse(json);
+    console.log(json)
+};
+xhr.open('GET', 'https://raw.githubusercontent.com/DiamondYuan/switch-document/master/data.json');
+xhr.send();
 
 chrome.browserAction.onClicked.addListener(iconClick);
 chrome.tabs.onActivated.addListener(tabActivated);
 chrome.tabs.onUpdated.addListener(tabActivated);
-
 
 function iconClick() {
   getCurrentTabUrl(goTo)
@@ -59,8 +57,6 @@ function chaneIcon(url) {
   chrome.browserAction.setIcon({ path: 'default.png' });
 }
 
-
-
 function getCurrentTabUrl(callback) {
   var queryInfo = {
     active: true,
@@ -68,8 +64,6 @@ function getCurrentTabUrl(callback) {
   };
 
   chrome.tabs.query(queryInfo, function (tabs) {
-    var tab = tabs[0];
-    var url = tab.url;
-    callback(url);
+    callback(tabs[0].url);
   });
 }
