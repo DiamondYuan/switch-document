@@ -6,5 +6,6 @@
   "highcharts.com/":"hcharts.cn/",
   "http://guides.rubyonrails.org/":"https://ruby-china.github.io/rails-guides/",
   "developer.chrome.com":"crxdoc-zh.appspot.com",
-  "https://leetcode.com":"https://leetcodechina.com"
+  "https://leetcode.com":"https://leetcodechina.com",
+  "golang.org":"go-zh.org"
 }
