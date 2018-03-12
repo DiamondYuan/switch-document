@@ -1,7 +1,7 @@
 {
   "name": "switch-document",
   "description": "Click to switch document",
-  "version": "0.6",
+  "version": "0.7",
   "background": {
     "scripts": [
       "background.js"
