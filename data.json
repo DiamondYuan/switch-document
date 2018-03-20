@@ -13,6 +13,6 @@
   "https://www.tensorflow.org":"https://tensorflow.google.cn",
   "https://www.rust-lang.org/en-US/":"https://www.rust-lang.org/zh-CN/",
   "https://bulma.io":"http://lqzh.me/bulma-docs-cn",
-  "https://facebook.github.io/react-native/docs","https://reactnative.cn/docs/next"
+  "https://facebook.github.io/react-native/docs":"https://reactnative.cn/docs/next"
 
 }
