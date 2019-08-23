@@ -1,18 +1,17 @@
 {
   "https://kubernetes.io/": "https://k8smeetup.github.io/",
-  "http://reactivex.io/rxjs":"http://cn.rx.js.org",
-  "https://reactjs.org/":"https://doc.react-china.org/",
-  "https://webpack.js.org/":"https://doc.webpack-china.org/",
-  "highcharts.com/":"hcharts.cn/",
-  "https://guides.rubyonrails.org/":"https://ruby-china.github.io/rails-guides/",
-  "developer.chrome.com":"crxdoc-zh.appspot.com",
-  "https://leetcode.com":"https://leetcode-cn.com",
-  "golang.org":"go-zh.org",
-  "https://vuejs.org":"https://cn.vuejs.org",
-  "https://developer.mozilla.org/en-US":"https://developer.mozilla.org/zh-CN",
-  "https://www.tensorflow.org":"https://tensorflow.google.cn",
-  "https://www.rust-lang.org/en-US/":"https://www.rust-lang.org/zh-CN/",
-  "https://bulma.io":"http://lqzh.me/bulma-docs-cn",
-  "https://facebook.github.io/react-native/docs":"https://reactnative.cn/docs/next"
-
+  "http://reactivex.io/rxjs": "http://cn.rx.js.org",
+  "https://reactjs.org/": "https://doc.react-china.org/",
+  "https://webpack.js.org/": "https://webpack.docschina.org/",
+  "highcharts.com/": "hcharts.cn/",
+  "https://guides.rubyonrails.org/": "https://ruby-china.github.io/rails-guides/",
+  "developer.chrome.com": "crxdoc-zh.appspot.com",
+  "https://leetcode.com": "https://leetcode-cn.com",
+  "golang.org": "go-zh.org",
+  "https://vuejs.org": "https://cn.vuejs.org",
+  "https://developer.mozilla.org/en-US": "https://developer.mozilla.org/zh-CN",
+  "https://www.tensorflow.org": "https://tensorflow.google.cn",
+  "https://www.rust-lang.org/en-US/": "https://www.rust-lang.org/zh-CN/",
+  "https://bulma.io": "http://lqzh.me/bulma-docs-cn",
+  "https://facebook.github.io/react-native/docs": "https://reactnative.cn/docs/next"
 }
