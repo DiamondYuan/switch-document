@@ -1,4 +1,5 @@
 {
+  "https://mobx.js.org/": "https://cn.mobx.js.org/",
   "https://nodejs.org/": "http://nodejs.cn/",
   "https://eggjs.org/en": "https://eggjs.org/zh-cn",
   "https://kubernetes.io/": "https://k8smeetup.github.io/",
