@@ -11,6 +11,9 @@ const loading = new Loading();
 let map = {};
 
 function urlChangeHandler(url) {
+  if (!url) {
+    return;
+  }
   var status = isInMap(url);
   console.log('urlChangeHandler', status, url, map);
   if (status) {
@@ -23,10 +26,10 @@ function urlChangeHandler(url) {
 async function loadData() {
   loading.start();
   const response = await fetch(
-    'https://raw.githubusercontent.com/DiamondYuan/switch-document/master/data.json',
+    'https://api.github.com/repos/diamondyuan/switch-document/contents/data.json',
   );
   loading.end();
-  map = await response.json();
+  map = JSON.parse(window.atob((await response.json()).content));
 }
 
 loadData();
