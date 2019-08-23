@@ -1,4 +1,5 @@
 {
+  "https://nodejs.org/": "http://nodejs.cn/",
   "https://eggjs.org/en": "https://eggjs.org/zh-cn",
   "https://kubernetes.io/": "https://k8smeetup.github.io/",
   "http://reactivex.io/rxjs": "http://cn.rx.js.org",
