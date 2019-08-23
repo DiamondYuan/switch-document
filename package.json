@@ -1,6 +1,6 @@
 {
   "name": "switch-document",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:DiamondYuan/switch-document.git",
   "author": "DiamondYuan <admin@diamondyuan.com>",
