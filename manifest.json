@@ -1,11 +1,9 @@
 {
   "name": "switch-document",
   "description": "Click to switch document",
-  "version": "0.7",
+  "version": "1.0.1",
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "author": "DiamondYuan",
@@ -20,5 +18,6 @@
   "manifest_version": 2,
   "browser_action": {
     "name": "Click to switch document"
-  }
+  },
+  "optional_permissions": ["<all_urls>"]
 }
